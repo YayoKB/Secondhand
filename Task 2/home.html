@@ -5,56 +5,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Second Hand Thrift Fest</title>
     <style>
-      body {
-        text-align: center;
+      .home-background-text h1 {
+        font-size: 60px;
+        color: var(--accentMain);
       }
 
-      .topnav ul {
-        list-style: none;
+      .home-background-text p {
+        font-size: 40px;
+        color: var(--accentSub);
       }
-      
-      a {
-        font-family: Verdana, sans-serif;
-      }
-
-      h1, h2, h3, h4, h5, h6, p {
-        font-family: Georgia, serif;
-        color: #386641;
-      }
-
-      h1 {
-        color: #0A210F;
-      }
-
     </style>
   </head>
   <body>
+    <header>
+      <img class="logo" src="./images/circlelogo80.png" alt="Thrift Fest Logo" />
+      <h1 class="logo-heading" style="color: var(--accentMain)">Second Hand Thrift Fest</h1>
+      <input type="checkbox" class="nav-toggle" name="nav-toggle" id="nav-toggle" />
+      <!--This is for the responsive menu-->
+
+      <nav>
+        <ul>
+          <li><a href="./home.html" class="is-active">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./bookings.html">Bookings</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <!--This is for the responsive menu-->
+        <span></span>
+      </label>
+    </header>
+
+    <div class="home-background">
+      <div class="home-underside">
+        <div class="pic" id="pic4"></div>
+        <div class="pic" id="pic3"></div>
+        <div class="pic" id="pic2"></div>
+        <div class="pic" id="pic1"></div>
+      </div>
+
+      <div class="home-background-area">
+        <div class="home-background-text">
+          <h1>Second Hand Thrift Fest</h1>
+          <p><em>Welcome to the biggest second hand market to hit the Cape.</em></p>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
-      <div class="topnav" id="top">
-        <img src="./images/circlelogo80.png" alt="Thrift Fest Logo" />
-        <h1>Second Hand Thrift Fest</h1>
-        <nav>
-          <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./our-work.html">Our Work</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./get-involved.html">Get Involved</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="homeheader">
-        <header>
-          <div class="homeBackground">
-            <img src="./images/background1.jpg" alt="" height="700" />
-            <h1>Second Hand Thrift Fest</h1>
-            <h2><em>Welcome to the biggest second hand market to hit the Cape.</em></h2>
-          </div>
-        </header>
-      </div>
       <div class="aboutHome">
         <h2>What is Second Hand Thrift Fest?</h2>
         <div class="row">
@@ -111,13 +115,14 @@
         <button class="button"><a href="./events.html">See Our Events</a></button>
       </div>
     </div>
-    <div class="footer">
+
+    <footer>
       <h6>&copy; Designed by Kate Blake, All Rights Reserved</h6>
       <div class="socials">
-        <a href="https://www.facebook.com/OfficialSecondHandGroup/"><img src="./images/fb80.png" alt="Facebook Page Link" /></a>
-        <a href="https://www.instagram.com/thriftfest/"><img src="./images/insta80.png" alt="Instagram Page Link" /></a>
+        <a href="https://www.facebook.com/OfficialSecondHandGroup/"><img src="./images/fb80.png" height="40px" alt="Facebook Page Link" /></a>
+        <a href="https://www.instagram.com/thriftfest/"><img src="./images/insta80.png" height="40px" alt="Instagram Page Link" /></a>
       </div>
-      <a href="#top">Back to Top</a>
-    </div>
+      <a href="#top" class="back-to-top">Back to Top</a>
+    </footer>
   </body>
 </html>
