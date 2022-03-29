@@ -4,6 +4,7 @@
   --headings: #0a210f;
   --accentSub: #ffedca;
   --accentMinor: #fffaf1;
+  --accentOther: #216830;
 }
 
 *,
@@ -40,7 +41,7 @@ h1 {
 
 header {
   background-color: var(--navback);
-  position: absolute;
+  position: relative;
   z-index: 999;
   width: 100%;
 }
@@ -59,7 +60,7 @@ header {
 }
 
 .nav-toggle-label {
-  position: absolute;
+  position: relative;
   background-color: var(--navback);
   height: 70px;
   width: 100%;
@@ -97,12 +98,12 @@ nav {
   position: absolute;
   text-align: center;
   background-color: var(--navback);
-  margin-top: 70px;
   top: 100%;
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 350ms ease-in-out;
+  overflow: hidden;
 }
 
 nav ul {
@@ -113,15 +114,11 @@ nav ul {
 
 nav li {
   margin-bottom: 1em;
+  transition: transform 0.3s ease-out;
 }
 
-nav ul li {
-  transition: transform 0.3s;
-}
-
-nav ul li:hover {
+nav li:hover {
   transform: scale(1.1);
-  overflow: hidden;
 }
 
 nav a {
@@ -152,19 +149,23 @@ nav a:hover {
 footer {
   background-color: var(--navback);
   width: 100%;
+  position: relative;
+  bottom: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-footer .back-to-top,
-h6 {
+footer .back-to-top a,
+p {
   color: var(--accentSub);
 }
 
-.back-to-top {
+.back-to-top a {
   text-decoration: none;
-  transition: transform 0.1s;
+  transition: transform 0.3s ease-out;
 }
 
-.back-to-top:hover {
+.back-to-top:hover a {
   transform: scale(1.1);
 }
 
@@ -294,12 +295,7 @@ h6 {
 }
 
 @media screen and (min-width: 850px) {
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  footer h6 {
+  footer p {
     grid-column: 1;
     font-size: 20px;
     display: flex;
@@ -314,8 +310,7 @@ h6 {
   }
 
   .socials img {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin: 0 1.5em;
   }
 
   .back-to-top {
@@ -325,15 +320,18 @@ h6 {
     align-items: center;
     margin-right: 3em;
   }
+
+  #front-H1 {
+    font-size: 60px;
+  }
+
+  #front-P {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 850px) {
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  footer h6 {
+  footer p {
     grid-column: 1;
     font-size: 14px;
     display: flex;
@@ -348,8 +346,7 @@ h6 {
   }
 
   .socials img {
-    margin-right: 0.3em;
-    margin-left: 0.3em;
+    margin: 0 0.3em;
   }
 
   .back-to-top {

@@ -5,46 +5,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Contact - Second Hand</title>
     <style>
       body {
         text-align: center;
       }
 
-      .topnav ul {
-        list-style: none;
-      }
-
       a {
         font-family: Verdana, sans-serif;
       }
 
-      h1, h2, h3, h4, h5, h6, p, li {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      li {
         font-family: Georgia, serif;
         color: #386641;
       }
 
       h1 {
-        color: #0A210F;
+        color: #0a210f;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="topnav" id="top">
-        <img src="./images/circlelogo80.png" alt="Thrift Fest Logo" />
-        <nav>
-          <ul>
-            <li><a href="./home.html" class="is-active">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./events.html">Events</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./bookings.html">Bookings</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header>
+      <img class="logo" src="./images/circlelogo80.png" alt="Thrift Fest Logo" />
+      <h1 class="logo-heading" style="color: var(--accentMain)">Second Hand Thrift Fest</h1>
+      <input type="checkbox" class="nav-toggle" name="nav-toggle" id="nav-toggle" />
+      <!--This is for the responsive menu-->
 
+      <nav>
+        <ul>
+          <li><a href="./home.html" class="is-active">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./bookings.html">Bookings</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <!--This is for the responsive menu-->
+        <span></span>
+      </label>
+    </header>
+
+    <div class="container">
       <h1>Get In Touch!</h1>
       <h2>Talk to us! Whether it's feedback, a question or booking a gig, we'd be happy to hear from you.</h2>
       <ul>
@@ -52,17 +64,18 @@
         <li>thriftfest123@gmail.com</li>
         <li>021 123 4567</li>
       </ul>
-      <a href="https://www.facebook.com/OfficialSecondHandGroup/">Facebook Page<img src="./images/fb250.png" alt="Official Facebook Page"></a>
-      <a href="https://www.facebook.com/groups/433426486699879">Facebook Marketplace <img src="./images/fb250.png" alt="Official Facebook Marketplace"></a>
-      <a href="https://www.instagram.com/thriftfest/">Instagram <img src="./images/insta250.png" alt=""></a>
+      <a href="https://www.facebook.com/OfficialSecondHandGroup/">Facebook Page<img src="./images/fb250.png" alt="Official Facebook Page" /></a>
+      <a href="https://www.facebook.com/groups/433426486699879">Facebook Marketplace <img src="./images/fb250.png" alt="Official Facebook Marketplace" /></a>
+      <a href="https://www.instagram.com/thriftfest/">Instagram <img src="./images/insta250.png" alt="" /></a>
     </div>
-    <div class="footer">
-      <h6>&copy; Designed by Kate Blake, All Rights Reserved</h6>
+
+    <footer>
+      <p>&copy; Designed by Kate Blake, All Rights Reserved</p>
       <div class="socials">
-        <a href="https://www.facebook.com/OfficialSecondHandGroup/"><img src="./images/fb80.png" alt="Facebook Page Link" /></a>
-        <a href="https://www.instagram.com/thriftfest/"><img src="./images/insta80.png" alt="Instagram Page Link" /></a>
+        <a href="https://www.facebook.com/OfficialSecondHandGroup/"><img src="./images/fb80.png" height="40px" alt="Facebook Page Link" /></a>
+        <a href="https://www.instagram.com/thriftfest/"><img src="./images/insta80.png" height="40px" alt="Instagram Page Link" /></a>
       </div>
-      <a href="#top">Back to Top</a>
-    </div>
+      <a href="#top" class="back-to-top">Back to Top</a>
+    </footer>
   </body>
 </html>

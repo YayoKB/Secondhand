@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Work - Second Hand</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Events - Second Hand</title>
     <style>
       body {
         text-align: center;
@@ -15,43 +16,58 @@
         margin: auto;
       }
 
-      .topnav ul {
-        list-style: none;
-      }
-
       a {
         font-family: Verdana, sans-serif;
       }
 
-      h1, h2, h3, h4, h5, h6, p, td, th {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      td,
+      th {
         font-family: Georgia, serif;
         color: #386641;
       }
 
-      h1, th {
-        color: #0A210F;
+      h1,
+      th {
+        color: #0a210f;
       }
 
-      table, th, td {
+      table,
+      th,
+      td {
         border: 1px solid;
       }
     </style>
   </head>
   <body>
+    <header>
+      <img class="logo" src="./images/circlelogo80.png" alt="Thrift Fest Logo" />
+      <h1 class="logo-heading" style="color: var(--accentMain)">Second Hand Thrift Fest</h1>
+      <input type="checkbox" class="nav-toggle" name="nav-toggle" id="nav-toggle" />
+      <!--This is for the responsive menu-->
+
+      <nav>
+        <ul>
+          <li><a href="./home.html" class="is-active">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./bookings.html">Bookings</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <!--This is for the responsive menu-->
+        <span></span>
+      </label>
+    </header>
     <div class="container">
-      <div class="topnav" id="top">
-        <img src="./images/circlelogo80.png" alt="Thrift Fest Logo" />
-        <nav>
-          <ul>
-            <li><a href="./home.html" class="is-active">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./events.html">Events</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./bookings.html">Bookings</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
       <div class="events">
         <h1>Events</h1>
         <div class="events-tables">
@@ -106,11 +122,13 @@
                 <th>When:</th>
                 <td class="event-image" rowspan="6"><img src="./images/obs-event.jpg" alt="The Monthly Obs-fficial Thrift Fest" /></td>
               </tr>
-              <tr><td>SATURDAY, 2 APRIL 2022 FROM 09:30-14:30</td></tr>
+              <tr>
+                <td>SATURDAY, 2 APRIL 2022 FROM 09:30-14:30</td>
+              </tr>
               <tr>
                 <th>Where:</th>
-                </tr>
-                <tr>
+              </tr>
+              <tr>
                 <td><a href="https://goo.gl/maps/nKwQ1aRCn5YcwJiN7">Observatory Community Centre</a></td>
               </tr>
               <tr>
@@ -134,7 +152,7 @@
               </tr>
             </table>
           </div>
-          
+
           <div class="event-table">
             <h2><em>The Monthly Trenchtown Thrift Fest</em></h2>
             <table>
@@ -183,7 +201,7 @@
             <table>
               <tr>
                 <th>When:</th>
-                <td class="event-image" rowspan="6"><img src="./images/brass-event.jpg" alt="The Monhtly Brass Bell Thrift Fest" /></td>
+                <td class="event-image" rowspan="6"><img src="./images/brass-event.jpg" alt="The Monthly Brass Bell Thrift Fest" /></td>
               </tr>
               <tr>
                 <td>WEDNESDAY, 30 MARCH 2022 FROM 16:00-21:00</td>
@@ -220,8 +238,8 @@
             <table>
               <tr>
                 <th>When:</th>
-                
-                <td class="event-image" rowspan="6"><img src="./images/vegan-event.jpg" alt="The Monhtly Vegan Goods Thrift Market" /></td>
+
+                <td class="event-image" rowspan="6"><img src="./images/vegan-event.jpg" alt="The Monthly Vegan Goods Thrift Market" /></td>
               </tr>
               <tr>
                 <td>SUNDAY, 27 MARCH 2022 FROM 10:00-15:00</td>
@@ -276,7 +294,7 @@
                 <th>Where:</th>
               </tr>
               <tr>
-              <td><a href="https://goo.gl/maps/629Nf8st5H1YAPT57">Blue Bird Garage Food and Goods Market</a></td>
+                <td><a href="https://goo.gl/maps/629Nf8st5H1YAPT57">Blue Bird Garage Food and Goods Market</a></td>
               </tr>
               <tr>
                 <th>Details:</th>
@@ -301,17 +319,17 @@
               </tr>
             </table>
           </div>
-
         </div>
       </div>
     </div>
-    <div class="footer">
-      <h6>&copy; Designed by Kate Blake, All Rights Reserved</h6>
+
+    <footer>
+      <p>&copy; Designed by Kate Blake, All Rights Reserved</p>
       <div class="socials">
-        <a href="https://www.facebook.com/OfficialSecondHandGroup/"><img src="./images/fb80.png" alt="Facebook Page Link" /></a>
-        <a href="https://www.instagram.com/thriftfest/"><img src="./images/insta80.png" alt="Instagram Page Link" /></a>
+        <a href="https://www.facebook.com/OfficialSecondHandGroup/"><img src="./images/fb80.png" height="40px" alt="Facebook Page Link" /></a>
+        <a href="https://www.instagram.com/thriftfest/"><img src="./images/insta80.png" height="40px" alt="Instagram Page Link" /></a>
       </div>
-      <a href="#top">Back to Top</a>
-    </div>
+      <a href="#top" class="back-to-top">Back to Top</a>
+    </footer>
   </body>
 </html>
