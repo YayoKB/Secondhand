@@ -149,14 +149,13 @@ nav a:hover {
 footer {
   background-color: var(--navback);
   width: 100%;
-  position: relative;
   bottom: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-footer .back-to-top a,
-p {
+.back-to-top a,
+footer p {
   color: var(--accentSub);
 }
 
