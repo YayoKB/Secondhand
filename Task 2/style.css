@@ -137,11 +137,11 @@ nav a:hover {
   color: var(--accentMain);
 }
 
-.nav-toggle:checked ~ nav {
+.nav-toggle:checked~nav {
   transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ nav a {
+.nav-toggle:checked~nav a {
   opacity: 1;
   transition: opacity 200ms ease-in-out 200ms;
 }
@@ -158,6 +158,29 @@ footer {
 footer .back-to-top a,
 p {
   color: var(--accentSub);
+}
+
+footer p {
+  grid-column: 1;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3em;
+}
+
+.socials {
+  grid-column: 2;
+  margin: 1rem 0;
+}
+
+.back-to-top {
+  font-size: 1.25rem;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3em;
 }
 
 .back-to-top a {
@@ -248,6 +271,175 @@ p {
   }
 }
 
+#front-H1 {
+  margin: 0 3rem;
+  font-size: 3.1rem;
+  color: var(--accentMain);
+  animation: h1Fade ease-out 1s;
+}
+
+@keyframes h1Fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#front-P {
+  margin: 0 3rem;
+  font-size: 1.9rem;
+  color: var(--accentSub);
+  animation: frontPSlide 1s ease-out, frontPFade ease-out 1s;
+}
+
+@keyframes frontPSlide {
+  0% {
+    transform: translateY(30%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes frontPFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.about-home {
+  background-color: var(--headings);
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.about-heading {
+  color: var(--accentMain);
+  margin: 4vh 3vh;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-home img {
+  border-radius: 11.25%;
+  max-width: 400px;
+}
+
+.about-text {
+  color: var(--accentSub);
+  grid-row: 3;
+  margin: 0;
+  font-size: 1.25rem;
+  margin: 4vh 4vw;
+}
+
+.img1,
+.img2 {
+  float: none;
+  display: flex;
+  justify-content: center;
+}
+
+.img1 {
+  grid-row: 2;
+}
+
+.img2 {
+  grid-row: 4;
+  margin-bottom: 6vh;
+}
+
+
+
+@media screen and (min-width: 851px) {
+  footer p {
+    font-size: 1.2rem;
+  }
+
+  .socials img {
+    margin: 0 1.5em;
+  }
+
+  #front-H1 {
+    font-size: 3.8rem;
+  }
+
+  #front-P {
+    font-size: 2.5rem;
+  }
+
+  .about-home {
+    padding: 2rem 4vw;
+    display: block;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .about-heading {
+    margin: 0;
+  }
+
+  .about-text {
+    font-size: 1.4rem;
+  }
+
+  .img1,
+  .img2 {
+    display: block;
+  }
+
+  .img-1 {
+    float: left;
+    margin-right: 2vw;
+    margin-bottom: 1%;
+    margin-top: 3vh;
+    display: block;
+    width: 33%;
+  }
+
+  .img-2 {
+    float: right;
+    margin-left: 2vw;
+    margin-bottom: 1%;
+    margin-top: 3vh;
+    display: block;
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  .socials img {
+    margin: 0 0.7em;
+  }
+
+  .back-to-top {
+    font-size: 1.1rem;
+  }
+
+  .about-home img {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1050px) {
   .nav-toggle-label {
     display: none;
@@ -292,68 +484,8 @@ p {
   nav a {
     opacity: 1;
   }
-}
 
-@media screen and (min-width: 850px) {
   footer p {
-    grid-column: 1;
-    font-size: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 3em;
-  }
-
-  .socials {
-    grid-column: 2;
-    margin: 1em 3em;
-  }
-
-  .socials img {
-    margin: 0 1.5em;
-  }
-
-  .back-to-top {
-    font-size: 20px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 3em;
-  }
-
-  #front-H1 {
-    font-size: 60px;
-  }
-
-  #front-P {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  footer p {
-    grid-column: 1;
-    font-size: 14px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 3em;
-  }
-
-  .socials {
-    grid-column: 2;
-    margin: 1em;
-  }
-
-  .socials img {
-    margin: 0 0.3em;
-  }
-
-  .back-to-top {
-    font-size: 20px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 3em;
+    font-size: 1.4rem;
   }
 }
