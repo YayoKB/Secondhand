@@ -193,6 +193,7 @@ footer p {
 
 .back-to-top:hover a {
   transform: scale(1.1);
+  color: var(--accentMain);
 }
 
 .home-background {
@@ -362,7 +363,102 @@ footer p {
   margin-bottom: 6vh;
 }
 
+.home-associates {
+  background-color: var(--accentOther);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
 
+
+.home-associates h2 {
+  color: var(--accentSub);
+}
+
+.home-associates-row {
+  width: 90%;
+  height: 250px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.home-associates-row::before,
+.home-associates-row::after {
+  height: 250px;
+  width: 15%;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, var(--accentOther) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+}
+
+.home-associates-row::before {
+  left: 0;
+  top: 0;
+}
+
+.home-associates-row::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 30s linear infinite;
+}
+
+.slider img {
+  margin: 0 25px;
+  border-radius: 12%/17.65%;
+  box-shadow: 0px 0px 25px var(--headings);
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.go-to-events {
+  border: none;
+  border-radius: 36px;
+  width: 300px;
+  background-color: var(--accentMain);
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  padding: 20px;
+  transition: transform 0.5s ease, background-color 0.5s ease-out;
+}
+
+.go-to-events a {
+  transition: color 0.5s ease;
+}
+
+.go-to-events:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: var(--headings);
+}
+
+.go-to-events:hover a {
+  color: var(--accentMain)
+}
+
+.go-to-events a {
+  text-decoration: none;
+  color: var(--headings);
+}
 
 @media screen and (min-width: 851px) {
   footer p {
@@ -439,7 +535,14 @@ footer p {
 
   .about-home img {
     width: 70%;
+  }
+
+  .img-1 {
     margin: 0 auto;
+  }
+
+  .img-2 {
+    margin: 0 auto 4vh;
   }
 
   .about-text {
