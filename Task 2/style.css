@@ -20,10 +20,13 @@ body {
   background-color: var(--accentSub);
   font-family: Georgia, serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, sans-serif;
 }
 
 h2,
@@ -152,6 +155,7 @@ footer {
   bottom: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: auto;
 }
 
 .back-to-top a,
@@ -339,7 +343,7 @@ footer p {
   grid-row: 3;
   margin: 0;
   font-size: 1.25rem;
-  margin: 4vh 4vw;
+  margin: 4vh 0;
 }
 
 .img1,
@@ -436,6 +440,10 @@ footer p {
   .about-home img {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .about-text {
+    margin: 4vh 4vw;
   }
 }
 
