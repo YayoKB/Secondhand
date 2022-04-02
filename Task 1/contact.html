@@ -9,6 +9,7 @@
     <style>
       body {
         text-align: center;
+        font-family: Georgia, serif;
       }
 
       ul {
@@ -26,13 +27,24 @@
       h5,
       h6,
       p,
-      li {
-        font-family: Georgia, serif;
+      li,
+      td {
         color: #386641;
       }
 
-      h1 {
+      h1,
+      th {
         color: #0a210f;
+      }
+
+      table {
+        margin: auto;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #386641;
       }
     </style>
   </head>
@@ -54,14 +66,26 @@
     <div class="container">
       <h1>Get In Touch!</h1>
       <h2>Talk to us! Whether it's feedback, a question or booking a gig, we'd be happy to hear from you.</h2>
-      <ul>
-        <li>Laura Rainbird</li>
-        <li>thriftfest123@gmail.com</li>
-        <li>021 123 4567</li>
-      </ul>
-      <a href="https://www.facebook.com/OfficialSecondHandGroup/">Facebook Page<img src="./images/fb250.png" width="100px" alt="Official Facebook Page" /></a>
-      <a href="https://www.facebook.com/groups/433426486699879">Facebook Marketplace <img src="./images/fb250.png" width="100px" alt="Official Facebook Marketplace" /></a>
-      <a href="https://www.instagram.com/thriftfest/">Instagram <img src="./images/insta250.png" width="100px" alt="" /></a>
+
+      <table class="contact-info">
+        <tr>
+          <th>Event Organiser:</th>
+          <td>Laura Rainbird</td>
+        </tr>
+        <tr>
+          <th>Email Address:</th>
+          <td>thriftfest123@gmail.com</td>
+        </tr>
+        <tr>
+          <th>Cellphone Number:</th>
+          <td>021 123 4567</td>
+        </tr>
+      </table>
+      <div class="contact-links">
+        <a href="https://www.facebook.com/OfficialSecondHandGroup/">Facebook Page<img src="./images/fb250.png" width="100px" alt="Official Facebook Page" /></a>
+        <a href="https://www.facebook.com/groups/433426486699879">Facebook Marketplace <img src="./images/fb250.png" width="100px" alt="Official Facebook Marketplace" /></a>
+        <a href="https://www.instagram.com/thriftfest/">Instagram <img src="./images/insta250.png" width="100px" alt="" /></a>
+      </div>
     </div>
 
     <footer>
