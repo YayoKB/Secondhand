@@ -7,7 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>About Second Hand</title>
-    <style></style>
+    <style>
+      .about {
+        width: 90vw;
+        margin: 2rem auto;
+      }
+
+      .about p {
+        margin: 2rem 1rem;
+      }
+
+      .about-images {
+        display: grid;
+      }
+
+      .about-images img {
+        border-radius: 6%/7.5%;
+        max-width: 500px;
+        margin: 1rem auto;
+        width: 90%;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .about-images img:hover {
+        transform: scale(105%);
+      }
+
+      @media screen and (min-width: 850px) {
+        .about-images {
+          grid-template-columns: auto auto;
+        }
+
+        .about-3 {
+          grid-column: span 2;
+        }
+      }
+
+      @media screen and (min-width: 1050px) {
+        .about-images {
+          grid-template-columns: auto auto auto;
+        }
+
+        .about-3 {
+          grid-column: auto;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -43,10 +88,10 @@
           dignissimos, blanditiis commodi, vitae ipsam sint sit! Deleniti ea, voluptates cumque natus saepe ratione itaque quas ad voluptatibus a totam laborum tenetur, consequatur dignissimos odit
           optio blanditiis ducimus neque veniam impedit doloribus quia! Excepturi dolorem et, impedit soluta rem minima modi perspiciatis cumque quo eius ad, labore aliquam praesentium autem culpa?
         </p>
-        <div class="row">
+        <div class="about-images">
           <img src="./images/about1.jpg" alt="" />
           <img src="./images/about2.jpg" alt="" />
-          <img src="./images/about3.jpg" alt="" />
+          <img class="about-3" src="./images/about3.jpg" alt="" />
         </div>
       </div>
     </div>
