@@ -42,6 +42,8 @@ h1 {
   color: var(--headings);
 }
 
+/*Header*/
+
 header {
   background-color: var(--navback);
   position: relative;
@@ -140,14 +142,16 @@ nav a:hover {
   color: var(--accentMain);
 }
 
-.nav-toggle:checked~nav {
+.nav-toggle:checked ~ nav {
   transform: scale(1, 1);
 }
 
-.nav-toggle:checked~nav a {
+.nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 200ms ease-in-out 200ms;
 }
+
+/* Footer */
 
 footer {
   background-color: var(--navback);
@@ -195,6 +199,8 @@ footer p {
   transform: scale(1.1);
   color: var(--accentMain);
 }
+
+/* Home image background */
 
 .home-background {
   background: linear-gradient(rgba(43, 19, 0, 0.6), rgba(43, 19, 0, 0.6));
@@ -319,6 +325,8 @@ footer p {
   }
 }
 
+/*Home About section*/
+
 .about-home {
   background-color: var(--headings);
   display: grid;
@@ -363,6 +371,8 @@ footer p {
   margin-bottom: 6vh;
 }
 
+/*Home Associates*/
+
 .home-associates {
   background-color: var(--accentOther);
   width: 100%;
@@ -372,7 +382,6 @@ footer p {
   justify-content: center;
   padding: 2rem 0;
 }
-
 
 .home-associates h2 {
   color: var(--accentSub);
@@ -452,12 +461,81 @@ footer p {
 }
 
 .go-to-events:hover a {
-  color: var(--accentMain)
+  color: var(--accentMain);
 }
 
 .go-to-events a {
   text-decoration: none;
   color: var(--headings);
+}
+
+/*Events*/
+.events {
+  margin: 1rem auto;
+  display: grid;
+}
+.event {
+  width: 90%;
+  margin: 1.5rem auto;
+  box-shadow: 0 0 10px var(--headings);
+  border-radius: 30px;
+  overflow: hidden;
+  background: var(--accentMain);
+}
+
+.accordion-label {
+  padding: 1rem 2rem;
+  display: block;
+  font-size: 1.5rem;
+  color: var(--headings);
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.accordion-label:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("./images/chevron.svg");
+  background-size: contain;
+  transition: transform 0.5s;
+}
+
+.event-content {
+  background: var(--accentSub);
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.event-content img {
+  border-radius: 30px;
+  margin: auto;
+}
+
+.accordion-input {
+  display: none;
+}
+
+.accordion-input:checked ~ .event-content {
+  padding: 1rem 2rem;
+  max-height: 200vh;
+}
+
+.accordion-input:checked ~ .accordion-label::after {
+  transform: translateY(-50%) rotate(0.25turn);
 }
 
 @media screen and (min-width: 851px) {

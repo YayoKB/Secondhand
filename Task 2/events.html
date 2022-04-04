@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>Events - Second Hand</title>
-    <style></style>
+    <style>
+      .events h3 {
+        color: var(--headings);
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -31,11 +35,15 @@
         <span></span>
       </label>
     </header>
+
     <div class="container">
       <div class="events">
         <h1>Events</h1>
-        <div class="events-all">
-          <div class="event">
+        <div class="event">
+          <input type="checkbox" name="event-accordion" id="novalis" class="accordion-input" />
+          <label for="novalis" class="accordion-label">Novalis</label>
+
+          <div class="event-content">
             <!--Possibly embed FB events later, or automate event-filling script-->
             <h2><em>The Monthly Novalis Thrift Fest</em></h2>
             <img src="./images/novalis-event.jpg" alt="Thrift Fest at Novalis Ubuntu Institute" />
@@ -68,8 +76,12 @@
               <li>All Covid-19 protocols will be followed.</li>
             </ul>
           </div>
+        </div>
 
-          <div class="event">
+        <div class="event">
+          <input type="checkbox" name="event-accordion" id="obs" class="accordion-input" />
+          <label for="obs" class="accordion-label">Obs-fficial</label>
+          <div class="event-content">
             <h2><em>The Monthly Obs-fficial Thrift Fest</em></h2>
             <img src="./images/obs-event.jpg" alt="The Monthly Obs-fficial Thrift Fest" />
 
@@ -96,8 +108,12 @@
               <li>All Covid-19 protocols will be followed.</li>
             </ul>
           </div>
+        </div>
 
-          <div class="event">
+        <div class="event">
+          <input type="checkbox" name="event-accordion" id="trenchtown" class="accordion-input" />
+          <label for="trenchtown" class="accordion-label">Trenchtown</label>
+          <div class="event-content">
             <h2><em>The Monthly Trenchtown Thrift Fest</em></h2>
             <img src="./images/trench-event.jpg" alt="The Monthly Trenchtown Thrift Fest" />
 
@@ -129,8 +145,12 @@
               <li>All Covid-19 protocols will be followed.</li>
             </ul>
           </div>
+        </div>
 
-          <div class="event">
+        <div class="event">
+          <input type="checkbox" name="event-accordion" id="brass" class="accordion-input" />
+          <label for="brass" class="accordion-label">Brass Bell</label>
+          <div class="event-content">
             <h2><em>The Monthly Brass Bell Thrift Fest</em></h2>
             <img src="./images/brass-event.jpg" alt="The Monthly Brass Bell Thrift Fest" />
 
@@ -156,8 +176,12 @@
               <li>All Covid-19 protocols will be followed.</li>
             </ul>
           </div>
+        </div>
 
-          <div class="event">
+        <div class="event">
+          <input type="checkbox" name="event-accordion" id="vegan" class="accordion-input" />
+          <label for="vegan" class="accordion-label">Vegan Goods</label>
+          <div class="event-content">
             <h2><em>The Monthly Vegan Goods Thrift Market</em></h2>
             <img src="./images/vegan-event.jpg" alt="The Monthly Vegan Goods Thrift Market" />
 
@@ -190,8 +214,12 @@
               <li>All Covid-19 protocols will be followed.</li>
             </ul>
           </div>
+        </div>
 
-          <div class="event">
+        <div class="event">
+          <input type="checkbox" name="event-accordion" id="bird" class="accordion-input" />
+          <label for="bird" class="accordion-label">Blue Bird</label>
+          <div class="event-content">
             <h2><em>The Monthly Blue Bird Thrift Market</em></h2>
             <img src="./images/blue-event.jpg" alt="The Monthly Blue Bird Thrift Market" />
 
