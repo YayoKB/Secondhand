@@ -8,7 +8,89 @@
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>Bookings - Second Hand</title>
     <link rel="icon" href="./images/circlelogo80.png" type="image/x-icon" />
-    <style></style>
+    <style>
+      .container h1 {
+        font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+        margin-bottom: 1rem;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 1.5rem 2rem;
+      }
+
+      form {
+        text-align: start;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 2rem;
+      }
+
+      label {
+        display: block;
+      }
+
+      input,
+      textarea,
+      select {
+        display: block;
+        width: 100%;
+        margin: 0.3rem 0 1rem 0;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        border: none;
+        font-size: 0.8rem;
+        font-family: Verdana, sans-serif;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 20%);
+      }
+
+      input,
+      select {
+        height: 2rem;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      .other-details {
+        grid-column: 1 / -1;
+      }
+
+      #submit,
+      #reset {
+        box-shadow: none;
+        border-radius: 20px;
+        font-family: Georgia, serif;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        transition: transform 0.5s ease;
+      }
+
+      #submit {
+        background-color: var(--accentOther);
+        color: white;
+      }
+
+      #reset {
+        background-color: var(--accentMain);
+      }
+
+      #submit:hover,
+      #reset:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+
+      @media screen and (min-width: 1050px) {
+        form {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -33,53 +115,71 @@
       </label>
     </header>
 
-    <form>
+    <div class="container">
       <h1>Bookings</h1>
       <p>Fields marked with * are required.</p>
-      <label for="FirstName">First Name:*</label>
-      <input type="text" name="FirstName" id="FirstName" title="Your First Name" required />
-      <br />
-      <label for="Surname">Surname:*</label>
-      <input type="text" name="Surname" id="Surname" title="Your Surname" required />
-      <br />
-      <label for="Business">Business Name:</label>
-      <input type="text" name="Business" id="Business" title="The name of your Business" />
-      <br />
-      <label for="Email">Email Address:*</label>
-      <input type="email" name="Email" id="Email" title="Your Email Address" required />
-      <br />
-      <label for="Cellphone">Cellphone Number:*</label>
-      <input type="tel" name="Cellphone" id="Cellphone" title="Your Cellphone Number" required />
-      <br />
-      <label for="Alt">Alternative Number:</label>
-      <input type="tel" name="Alt" id="Alt" title="An alternative Contact number" />
-      <br />
-      <label for="Stalls">Number of Stalls:*</label>
-      <input type="number" name="Stalls" id="Stalls" min="1" title="The number of stalls to book. The minimum is 1" required />
-      <br />
-      <label for="TrestleCheck">Trestle Table?</label>
-      <input type="checkbox" name="TrestleCheck" id="TrestleCheck" title="Check if you require trestle tables" />
-      <br />
-      <label for="Trestles">Number of Trestles:</label>
-      <input type="number" name="Trestles" id="Trestles" min="0" title="The number of trestle tables to book. The minimum is 0" />
-      <br />
-      <label for="Event">Event:*</label>
-      <select name="Event" id="Event" title="The Event you wish to sell at" required>
-        <option value="Ubuntu">Novalis</option>
-        <option value="Observatory">Obs-fficial</option>
-        <option value="Trenchtown">Trenchtown</option>
-        <option value="Brass">Brass Bell</option>
-        <option value="Vegan">Vegan Goods</option>
-        <option value="Blue">Blue Bird</option>
-      </select>
-      <br />
-      <label for="Other">Any other details:</label>
-      <br />
-      <textarea name="Other" id="Other" cols="40" rows="5" title="Any other details you would like to send"></textarea>
-      <br />
-      <input type="submit" value="Submit" />
-      <input type="reset" value="Reset" />
-    </form>
+      <form>
+        <div>
+          <label for="FirstName">First Name:*</label>
+          <input type="text" name="FirstName" id="FirstName" title="Your First Name" placeholder="Jane" required />
+        </div>
+
+        <div>
+          <label for="Surname">Surname:*</label>
+          <input type="text" name="Surname" id="Surname" title="Your Surname" placeholder="Doe" required />
+        </div>
+
+        <div>
+          <label for="Business">Business Name:</label>
+          <input type="text" name="Business" id="Business" title="The name of your Business" placeholder="Jane's Jewels" />
+        </div>
+
+        <div>
+          <label for="Email">Email Address:*</label>
+          <input type="email" name="Email" id="Email" title="Your Email Address" placeholder="janedoe@example.com" required />
+        </div>
+
+        <div>
+          <label for="Cellphone">Cellphone Number:*</label>
+          <input type="tel" name="Cellphone" id="Cellphone" title="Your Cellphone Number" placeholder="012 345 6789" required />
+        </div>
+
+        <div>
+          <label for="Alt">Alternative Number:</label>
+          <input type="tel" name="Alt" id="Alt" title="An alternative Contact number" placeholder="987 654 3210" />
+        </div>
+
+        <div>
+          <label for="Stalls">Number of Stalls:*</label>
+          <input type="number" name="Stalls" id="Stalls" min="1" title="The number of stalls to book. The minimum is 1" placeholder="1" required />
+        </div>
+
+        <div>
+          <label for="Trestles">Number of Trestles:</label>
+          <input type="number" name="Trestles" id="Trestles" min="0" title="The number of trestle tables to book. The minimum is 0" placeholder="0" />
+        </div>
+
+        <div>
+          <label for="Event">Event:*</label>
+          <select name="Event" id="Event" title="The Event you wish to sell at" required>
+            <option value="Ubuntu">Novalis</option>
+            <option value="Observatory">Obs-fficial</option>
+            <option value="Trenchtown">Trenchtown</option>
+            <option value="Brass">Brass Bell</option>
+            <option value="Vegan">Vegan Goods</option>
+            <option value="Blue">Blue Bird</option>
+          </select>
+        </div>
+
+        <div class="other-details">
+          <label for="Other">Any other details:</label>
+          <textarea name="Other" id="Other" cols="40" rows="5" title="Any other details you would like to send" placeholder="What items you are going to sell, etc."></textarea>
+        </div>
+
+        <input type="submit" value="Submit" id="submit" />
+        <input type="reset" value="Reset" id="reset" />
+      </form>
+    </div>
 
     <footer>
       <p>&copy; Designed by Kate Blake, All Rights Reserved</p>

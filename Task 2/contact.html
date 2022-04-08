@@ -8,7 +8,77 @@
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>Contact - Second Hand</title>
     <link rel="icon" href="./images/circlelogo80.png" type="image/x-icon" />
-    <style></style>
+    <style>
+      .container {
+        margin: 2rem auto;
+        max-width: 900px;
+        padding: 0 2rem;
+        width: 100%;
+      }
+
+      .container h1 {
+        font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+      }
+
+      h2 {
+        margin: 1rem 0;
+      }
+
+      table {
+        margin: 0 auto;
+        text-align: left;
+        border-radius: 10px;
+        border-spacing: 0 1rem;
+        width: 100%;
+      }
+
+      th {
+        font-size: 1.3rem;
+        color: var(--accentMain);
+        letter-spacing: 2px;
+        background-color: var(--accentOther);
+        width: 10%;
+        border-radius: 10px 0px 0px 10px;
+      }
+
+      td {
+        background: linear-gradient(90deg, var(--accentOther) 0%, var(--accentMain) 15%, var(--accentMain));
+        text-align: center;
+        word-wrap: break-word;
+        word-break: break-all;
+        hyphens: auto;
+        border-radius: 0px 10px 10px 0px;
+      }
+
+      th,
+      td {
+        min-height: 2rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .contact-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 1rem auto;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .contact-links img {
+        width: 50%;
+        max-width: 80px;
+        transition: scale 0.2s ease-in-out;
+      }
+
+      .contact-links img:hover {
+        scale: 1.05;
+      }
+
+      .contact-links p {
+        color: var(--headings);
+        font-size: 1.2rem;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -52,10 +122,15 @@
             <td>021 123 4567</td>
           </tr>
         </table>
+
         <div class="contact-links">
-          <a href="https://www.facebook.com/OfficialSecondHandGroup/">Facebook Page<img src="./images/fb250.png" width="100px" alt="Official Facebook Page" /></a>
-          <a href="https://www.facebook.com/groups/433426486699879">Facebook Marketplace <img src="./images/fb250.png" width="100px" alt="Official Facebook Marketplace" /></a>
-          <a href="https://www.instagram.com/thriftfest/">Instagram <img src="./images/insta250.png" width="100px" alt="" /></a>
+          <p><em>Facebook Group:</em></p>
+          <p><em>Facebook Marketplace:</em></p>
+          <p><em>Instagram:</em></p>
+
+          <a href="https://www.facebook.com/OfficialSecondHandGroup/"><img src="./images/fb250.png" width="100px" alt="Official Facebook Page" /></a>
+          <a href="https://www.facebook.com/groups/433426486699879"><img src="./images/fb250.png" width="100px" alt="Official Facebook Marketplace" /></a>
+          <a href="https://www.instagram.com/thriftfest/"> <img src="./images/insta250.png" width="100px" alt="" /></a>
         </div>
       </section>
     </div>
