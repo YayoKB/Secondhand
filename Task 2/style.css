@@ -486,75 +486,119 @@ footer p {
 }
 
 /*Events*/
-.events {
-  display: grid;
-  gap: 2rem;
-  margin: 2rem auto;
-}
-.event {
-  width: 90%;
-  margin: 0 auto;
-  box-shadow: 0 0 10px var(--headings);
-  border-radius: 30px;
-  overflow: hidden;
-  background: var(--accentMain);
+.events h3 {
+  color: var(--headings);
 }
 
-.accordion-label {
-  padding: 1rem 2rem;
+.events {
+  margin-bottom: 2rem;
+}
+
+.event-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-content {
+  order: 99;
+  text-align: justify;
+  width: 100%;
+  display: none;
+  border-top: none;
+  box-shadow: 0px 0px 20px var(--headings);
+  border-radius: 0px 0px 30px 30px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff0d2;
+}
+
+.event-content h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.event-content ul li {
+  line-height: 1.3;
+}
+
+.event-content ul {
+  margin: 0 1rem;
+}
+
+.first-heading {
+  margin-top: 1rem;
+}
+
+.event-image {
+  border-radius: 30px;
+  margin: auto;
+  height: 100%;
+}
+
+.event-content img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.event-content h3,
+.event-content p,
+.event-content a {
+  margin-bottom: 1rem;
+  line-height: 1.25;
+  margin-right: 2rem;
+}
+
+.event-label {
+  padding: 0.5rem 1rem;
+  border-radius: 10px 10px;
+  border-top: 1px solid rgba(33, 104, 48, 0.1);
+  border-left: 1px solid rgba(33, 104, 48, 0.1);
+  border-right: 1px solid rgba(33, 104, 48, 0.1);
   display: block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--headings);
+  background-color: var(--accentMain);
   cursor: pointer;
   position: relative;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
+  flex: 1;
 }
 
-.accordion-label:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.event-label:hover {
+  background-color: #28823c;
 }
 
-.accordion-label::after {
+.event-label::after {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 1.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
   background-image: url("./images/chevron.svg");
   background-size: contain;
   transition: transform 0.5s;
 }
 
-.event-content {
-  background: var(--accentSub);
-  display: grid;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
-  row-gap: 1rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
-}
-
-.event-content img {
-  border-radius: 30px;
-  margin: auto;
-  width: 100%;
-  max-width: 300px;
-}
-
-.accordion-input {
+.event-input {
   display: none;
 }
 
-.accordion-input:checked ~ .event-content {
-  padding: 1rem 2rem;
-  max-height: 200vh;
+.event-input:checked + .event-label {
+  font-weight: bold;
+  color: var(--accentMinor);
+  background-color: var(--accentOther);
 }
 
-.accordion-input:checked ~ .accordion-label::after {
+.event-input:checked + .event-label + .event-content {
+  display: grid;
+}
+
+.event-input:checked + .event-label::after {
   transform: translateY(-50%) rotate(0.25turn);
 }
 
@@ -622,6 +666,40 @@ footer p {
     display: block;
     width: 33%;
   }
+
+  .event-label {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .event-content {
+    grid-template-columns: 40% 60%;
+    column-gap: 2rem;
+  }
+
+  .first-heading {
+    margin-top: 0;
+  }
+
+  .event-content ul li {
+    margin-right: 2rem;
+  }
+
+  .event-image {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    margin: auto;
+  }
+
+  .event-content img {
+    grid-column-start: 1;
+    grid-row: span 6;
+    margin: auto;
+  }
+
+  .event-content h2 {
+    grid-column: span 2;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -643,6 +721,10 @@ footer p {
 
   .about-text {
     margin: 4vh 4vw;
+  }
+
+  .event-links {
+    flex-direction: column;
   }
 }
 
