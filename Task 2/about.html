@@ -28,49 +28,8 @@
         margin: 0 1rem 0 1rem;
       }
 
-      .image-wrapper {
-        position: relative;
-        max-width: 500px;
-        width: 100%;
-        margin: 1rem auto;
-      }
-
-      .image-wrapper img {
-        display: block;
-        width: 100%;
-        border-radius: 6%/7.5%;
-        max-width: 500px;
-        transition: filter 0.25s;
-      }
-
-      .image-wrapper:hover img {
-        filter: blur(3px);
-      }
-
       .image-caption {
-        position: absolute;
-        border-radius: 6%/7.5%;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
         background-color: rgba(10, 33, 15, 0.8);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.25s;
-      }
-
-      .image-caption:hover {
-        opacity: 1;
-      }
-
-      .image-caption p {
-        color: var(--accentMain);
-        font-size: 2rem;
       }
 
       @media screen and (min-width: 850px) {
@@ -129,21 +88,21 @@
           optio blanditiis ducimus neque veniam impedit doloribus quia! Excepturi dolorem et, impedit soluta rem minima modi perspiciatis cumque quo eius ad, labore aliquam praesentium autem culpa?
         </p>
         <div class="about-images">
-          <div class="image-wrapper">
+          <div class="image-wrapper about-wrapper">
             <img src="./images/about1.jpg" alt="Three attendees smiling and posing" />
             <div class="image-caption">
               <p>Second Hand Thrift is open to all types of people!</p>
             </div>
           </div>
 
-          <div class="image-wrapper">
+          <div class="image-wrapper about-wrapper">
             <img src="./images/about2.jpg" alt="The owner Laura Rainbird hugging two people" />
             <div class="image-caption">
               <p>We have a welcoming and friendly community.</p>
             </div>
           </div>
 
-          <div class="image-wrapper about-3">
+          <div class="image-wrapper about-wrapper about-3">
             <img src="./images/about3.jpg" alt="Two attendees smiling while sitting at a bench" />
 
             <div class="image-caption">
