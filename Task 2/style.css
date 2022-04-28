@@ -83,7 +83,7 @@ header {
 }
 
 .logo {
-  margin-top: 1em;
+  margin-top: 1rem;
   display: none;
 }
 
@@ -490,6 +490,7 @@ footer p {
 
 .prog-bar-inner {
   height: 100%;
+  width: 0%;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -807,12 +808,14 @@ footer p {
     display: grid;
     -ms-grid-columns: auto auto 1fr;
     grid-template-columns: auto auto 1fr;
+    min-height: calc(80px + 2rem);
   }
 
   .logo {
     display: flex;
     margin: 1em 3em;
     grid-column: 1;
+    min-width: 80px;
   }
 
   .logo-heading {
