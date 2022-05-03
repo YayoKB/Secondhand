@@ -1,3 +1,5 @@
+//For Home Associates Slider
+
 const slider = document.querySelector(".slider-inner");
 const progressBar = document.querySelector(".prog-bar-inner");
 

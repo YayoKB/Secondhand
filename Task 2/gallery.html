@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script defer src="./gallery.js"></script>
     <title>Gallery - Second Hand</title>
     <link rel="icon" href="./images/circlelogo80.png" type="image/x-icon" />
     <style>
@@ -44,14 +45,57 @@
     <div class="container">
       <h1>Gallery</h1>
       <div class="image-gallery">
-        <img src="./images/gallery1thumb.jpg" data-imgsrc="./images/gallery1.jpg" alt="A crowd of people browsing through clothing racks" />
-        <img src="./images/gallery2thumb.jpg" alt="A DJ busy playing songs" />
-        <img src="./images/gallery3thumb.jpg" alt="Stall owner posing in front of their clothing stall" />
-        <img src="./images/gallery4thumb.jpg" alt="Blue Bird Garage and Market interior with many stalls setup" />
-        <img src="./images/gallery5thumb.jpg" alt="Interior of marquee with many stalls setup" />
-        <img src="./images/gallery6thumb.jpg" alt="Hamburger and french fries" />
+        <img
+          src="./images/gallery1thumb.jpg"
+          data-imgsrc="./images/gallery1.jpg"
+          alt="A crowd of people browsing through clothing racks"
+          class="lightbox-enabled"
+          data-desc="Second Hand has countless items of clothing for you to browse."
+        />
+        <img src="./images/gallery2thumb.jpg" data-imgsrc="./images/gallery2.jpg" alt="A DJ busy playing songs" class="lightbox-enabled" data-desc="We often have DJs playing for you to enjoy!" />
+        <img
+          src="./images/gallery3thumb.jpg"
+          data-imgsrc="./images/gallery3.jpg"
+          alt="Stall owner posing in front of their clothing stall"
+          class="lightbox-enabled"
+          data-desc="You set up your stall however you like!"
+        />
+        <img
+          src="./images/gallery4thumb.jpg"
+          data-imgsrc="./images/bg2.jpg"
+          alt="Blue Bird Garage and Market interior with many stalls setup"
+          class="lightbox-enabled"
+          data-desc="We make use of various beautiful locations."
+        />
+        <img
+          src="./images/gallery5thumb.jpg"
+          data-imgsrc="./images/bg4.jpg"
+          alt="Interior of marquee with many stalls setup"
+          class="lightbox-enabled"
+          data-desc="Our events are held both inside and outside!"
+        />
+        <img
+          src="./images/gallery6thumb.jpg"
+          data-imgsrc="./images/gallery6.jpg"
+          alt="Hamburger and french fries"
+          class="lightbox-enabled"
+          data-desc="There's always food available if you're feeling hungry."
+        />
       </div>
       <button><a href="https://www.facebook.com/OfficialSecondHandGroup/photos/" target="_blank" rel="noopener" rel="noreferrer">See More Photos</a></button>
+
+      <div class="lightbox-container">
+        <div class="lightbox-image-wrapper">
+          <button class="lightbox-btn" id="left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" /></svg>
+          </button>
+          <img src="./images/gallery1.jpg" alt="Image" class="lightbox-image" />
+          <p class="description"></p>
+          <button class="lightbox-btn" id="right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" /></svg>
+          </button>
+        </div>
+      </div>
     </div>
 
     <footer>
