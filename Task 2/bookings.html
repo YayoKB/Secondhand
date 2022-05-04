@@ -18,7 +18,7 @@
         max-width: 900px;
         margin: 0 auto;
         width: 100%;
-        padding: 1.5rem 2rem;
+        padding: 2rem;
       }
 
       form {
@@ -63,20 +63,24 @@
       #submit,
       #reset {
         box-shadow: none;
+        min-height: 2.5rem;
         border-radius: 20px;
         font-family: Georgia, serif;
         font-size: 1rem;
         letter-spacing: 4px;
         transition: transform 0.5s ease;
+        max-width: 100%;
       }
 
       #submit {
         background-color: var(--accentOther);
         color: white;
+        justify-content: flex-start;
       }
 
       #reset {
         background-color: var(--accentMain);
+        justify-content: flex-end;
       }
 
       #submit:hover,
@@ -85,9 +89,21 @@
         cursor: pointer;
       }
 
+      @media screen and (min-width: 851px) {
+        .form-buttons {
+          display: flex;
+          justify-content: space-around;
+          column-gap: 2rem;
+        }
+      }
+
       @media screen and (min-width: 1050px) {
         form {
           grid-template-columns: 1fr 1fr;
+        }
+
+        .form-buttons {
+          grid-column: span 2;
         }
       }
     </style>
@@ -176,8 +192,7 @@
           <textarea name="Other" id="Other" cols="40" rows="5" title="Any other details you would like to send" placeholder="What items you are going to sell, etc."></textarea>
         </div>
 
-        <input type="submit" value="Submit" id="submit" />
-        <input type="reset" value="Reset" id="reset" />
+        <div class="form-buttons"><input type="submit" value="Submit" id="submit" /> <input type="reset" value="Reset" id="reset" /></div>
       </form>
     </div>
 
