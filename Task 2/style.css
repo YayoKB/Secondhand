@@ -16,9 +16,9 @@
 }
 
 body {
+  font-family: Georgia, serif;
   margin: 0;
   background-color: var(--accentSub);
-  font-family: Georgia, serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -275,7 +275,7 @@ footer p {
 
 #pic1 {
   animation-delay: 0s;
-  background-image: url(./images/background1.jpg);
+  background-image: url(./images/bg1.jpg);
 }
 
 #pic2 {
@@ -742,6 +742,7 @@ footer p {
 }
 
 .lightbox-btn {
+  width: auto;
   background-color: rgba(255, 255, 255, 0.7);
   display: grid;
   place-items: center;
