@@ -46,7 +46,7 @@ h1 {
   color: var(--headings);
 }
 
-.home-associates button {
+button {
   border: none;
   border-radius: 12%/50%;
   width: 18rem;
@@ -590,6 +590,7 @@ footer p {
 
 .event-content ul li {
   line-height: 1.3;
+  padding-left: 0.4rem;
 }
 
 .event-content ul {
