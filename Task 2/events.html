@@ -11,13 +11,20 @@
 
     <style>
       .container {
-        margin: 0 2rem;
+        margin: 0 auto;
         margin-bottom: 2rem;
+        width: 85%;
       }
 
       .container h1 {
         margin: 2rem auto;
         font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+      }
+
+      @media screen and (min-width: 1050px) {
+        .container {
+          width: 65%;
+        }
       }
     </style>
   </head>
