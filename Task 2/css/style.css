@@ -279,22 +279,22 @@ footer p {
 
 #pic1 {
   animation-delay: 0s;
-  background-image: url(./images/bg1.jpg);
+  background-image: url(../images/bg1.jpg);
 }
 
 #pic2 {
   animation-delay: 6s;
-  background-image: url(./images/bg2.jpg);
+  background-image: url(../images/bg2.jpg);
 }
 
 #pic3 {
   animation-delay: 12s;
-  background-image: url(./images/bg3.jpg);
+  background-image: url(../images/bg3.jpg);
 }
 
 #pic4 {
   animation-delay: 18s;
-  background-image: url(./images/bg4.jpg);
+  background-image: url(../images/bg4.jpg);
 }
 
 @keyframes animate {
@@ -655,7 +655,7 @@ footer p {
   right: 0.5rem;
   width: 1rem;
   height: 1rem;
-  background-image: url("./images/chevron.svg");
+  background-image: url("../images/chevron.svg");
   background-size: contain;
   transition: transform 0.5s;
 }
