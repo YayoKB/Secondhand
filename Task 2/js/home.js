@@ -1,3 +1,7 @@
+/*Some code sourced and edited accordingly from:
+
+Conor Bailey - JavaScript: Create a Device Friendly Product Slider With Progress Bar - https://www.youtube.com/watch?v=LPBGK1gqXoU */
+
 //For Home Associates Slider
 
 const slider = document.querySelector(".slider-inner");

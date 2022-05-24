@@ -78,6 +78,9 @@ button:hover a {
 }
 
 /*Header*/
+/*Some code sourced and edited accordingly from:
+
+Kevin Powell - Create a responsive navigation bar with no JS! - https://www.youtube.com/watch?v=8QKOaTYvYUA */
 
 header {
   background-color: var(--navback);
@@ -189,6 +192,10 @@ nav a:hover {
 
 /* Footer */
 
+/*Some code sourced and edited accordingly from:
+
+Kevin Powell - Easy sticky footer - https://www.youtube.com/watch?v=yc2olxLgKLk */
+
 footer {
   background-color: var(--navback);
   width: 100%;
@@ -239,6 +246,11 @@ footer p {
 }
 
 /* Home image background */
+
+/* Some code sourced and edited accordingly from: 
+csPoint - Full Screen Background Image Slider using CSS and HTML only - https://www.youtube.com/watch?v=Kd9LBwfB7Hc
+Web Zone - Full Screen Hero Background Image using HTML and CSS - https://www.youtube.com/watch?v=URTDznfBisY
+White, Z - How to make cross-fading images with CSS - https://www.devtwins.com/blog/css-cross-fading-images */
 
 .home-background {
   background: linear-gradient(rgba(43, 19, 0, 0.6), rgba(43, 19, 0, 0.6));
@@ -432,6 +444,10 @@ footer p {
   font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
 
+/*Some code sourced and edited accordingly from:
+
+Conor Bailey - JavaScript: Create a Device Friendly Product Slider With Progress Bar - https://www.youtube.com/watch?v=LPBGK1gqXoU */
+
 .home-associates-row {
   position: relative;
   width: 90%;
@@ -512,6 +528,29 @@ footer p {
 
 /*About*/
 
+/*Some code sourced and edited accordingly from:
+
+dcode - Image Hover Text Overlay Effeect with HTML & CSS - https://www.youtube.com/watch?v=exb2ab72Xhs */
+
+.about {
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.about p {
+  margin: 2rem 2rem;
+}
+
+.about h1 {
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+}
+
+.about-images {
+  display: grid;
+  column-gap: 2rem;
+  margin: 0 1rem 0 1rem;
+}
+
 .image-wrapper {
   position: relative;
   margin: 1rem auto;
@@ -533,7 +572,7 @@ footer p {
   position: absolute;
   padding: 1rem;
   border-radius: 6%/7.5%;
-  background-color: rgba(33, 104, 48, 0.7);
+  background-color: rgba(10, 33, 15, 0.8);
   top: 0;
   left: 0;
   width: 100%;
@@ -627,6 +666,22 @@ footer p {
   margin-right: 2rem;
 }
 
+/* Some code sourced and edited accordingly from:
+
+    Julio Codes - Reponsive FAQ accordion dropdown - https://www.youtube.com/watch?v=MXrtXg1kpVs 
+    dcode - How to create a CSS-Only Accordion - https://www.youtube.com/watch?v=pzy_QStQaqA */
+
+.events-container {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 85%;
+}
+
+.events-container h1 {
+  margin: 2rem auto;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+}
+
 .event-label {
   padding: 0.5rem 1rem;
   border-radius: 10px 10px;
@@ -680,6 +735,20 @@ footer p {
 
 /*Image Gallery*/
 
+/*Some code sourced and edited accordingly from:
+
+dcode - How to Create an Image Grid Gallery - https://www.youtube.com/watch?v=rnhoY5Cdmy0
+Coding in Public - Lightbox Image Gallery Part 1 & 2 - https://www.youtube.com/watch?v=K64-o0JgO-s & https://www.youtube.com/watch?v=_h6iT2UnyVs */
+
+.gallery-container h1 {
+  margin-top: 2rem;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+}
+
+.gallery-container button {
+  margin-bottom: 2rem;
+}
+
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 500px));
@@ -726,7 +795,6 @@ footer p {
 .lightbox-image-wrapper {
   display: grid;
   place-items: center;
-  width: 65vw;
   position: relative;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
   border-radius: 3%/4.5%;
@@ -790,6 +858,163 @@ footer p {
   right: 0px;
 }
 
+/*Bookings*/
+
+.bookings-container h1 {
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.bookings-container {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+}
+
+form {
+  text-align: start;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2rem;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  margin: 0.3rem 0 1rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.8rem;
+  font-family: Verdana, sans-serif;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 20%);
+}
+
+input,
+select {
+  height: 2rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.other-details {
+  grid-column: 1 / -1;
+}
+
+#submit,
+#reset {
+  box-shadow: none;
+  min-height: 2.5rem;
+  border-radius: 20px;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  transition: transform 0.5s ease;
+  max-width: 100%;
+}
+
+#submit {
+  background-color: var(--accentOther);
+  color: white;
+  justify-content: flex-start;
+}
+
+#reset {
+  background-color: var(--accentMain);
+  justify-content: flex-end;
+}
+
+#submit:hover,
+#reset:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/*Contact*/
+
+.contact-container {
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.contact-container h1 {
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+}
+
+.contact-container h2 {
+  margin: 2rem 0;
+  font-weight: normal;
+}
+
+table {
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 10px;
+  border-spacing: 0 1rem;
+  width: 100%;
+}
+
+th {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--accentMain);
+  letter-spacing: 2px;
+  background-color: var(--accentOther);
+  width: 10%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+td {
+  background: linear-gradient(90deg, var(--accentOther) 0%, var(--accentMain) 15%, var(--accentMain));
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: auto;
+  border-radius: 0px 10px 10px 0px;
+}
+
+th,
+td {
+  min-height: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-links img {
+  width: 50%;
+  max-width: 80px;
+  transition: scale 0.2s ease-in-out;
+  image-rendering: -moz-crisp-edges;
+}
+
+.contact-links a:hover img {
+  scale: 1.05;
+}
+
+.contact-links p {
+  color: var(--headings);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
 @media screen and (min-width: 851px) {
   .socials img {
     margin: 0 1.5em;
@@ -799,6 +1024,10 @@ footer p {
     padding: 2rem 4vw;
     display: block;
   }
+
+  /* Clearfix sourced from:
+
+  W3 Schools - CSS Layout - clear and clearfix - https://www.w3schools.com/Css/css_float_clear.asp */
 
   .clearfix::after {
     content: "";
@@ -831,6 +1060,14 @@ footer p {
     margin-top: 3vh;
     display: block;
     width: 33%;
+  }
+
+  .about-images {
+    grid-template-columns: auto auto;
+  }
+
+  .about-3 {
+    grid-column: span 2;
   }
 
   .event-label {
@@ -866,6 +1103,16 @@ footer p {
   .event-content h2 {
     grid-column: span 2;
   }
+
+  .lightbox-image-wrapper {
+    width: 80vw;
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -891,6 +1138,10 @@ footer p {
 
   .event-links {
     flex-direction: column;
+  }
+
+  .lightbox-image-wrapper {
+    width: 90vw;
   }
 }
 
@@ -940,5 +1191,29 @@ footer p {
 
   nav a {
     opacity: 1;
+  }
+
+  .about-images {
+    grid-template-columns: auto auto auto;
+  }
+
+  .about-3 {
+    grid-column: auto;
+  }
+
+  .events-container {
+    width: 65%;
+  }
+
+  .lightbox-image-wrapper {
+    width: 60vw;
+  }
+
+  form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-buttons {
+    grid-column: span 2;
   }
 }

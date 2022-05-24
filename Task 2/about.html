@@ -8,50 +8,6 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
     <title>About Second Hand</title>
     <link rel="icon" href="./images/circlelogo80.png" type="image/x-icon" />
-    <style>
-      .about {
-        width: 90vw;
-        margin: 2rem auto;
-      }
-
-      .about p {
-        margin: 2rem 2rem;
-      }
-
-      .about h1 {
-        font-size: clamp(1.8rem, 2.5vw, 2.5rem);
-      }
-
-      .about-images {
-        display: grid;
-        column-gap: 2rem;
-        margin: 0 1rem 0 1rem;
-      }
-
-      .image-caption {
-        background-color: rgba(10, 33, 15, 0.8);
-      }
-
-      @media screen and (min-width: 850px) {
-        .about-images {
-          grid-template-columns: auto auto;
-        }
-
-        .about-3 {
-          grid-column: span 2;
-        }
-      }
-
-      @media screen and (min-width: 1050px) {
-        .about-images {
-          grid-template-columns: auto auto auto;
-        }
-
-        .about-3 {
-          grid-column: auto;
-        }
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -76,7 +32,7 @@
       </label>
     </header>
 
-    <div class="container">
+    <div class="about-container">
       <section class="about">
         <h1>About Second Hand</h1>
         <p>
@@ -87,6 +43,12 @@
           dignissimos, blanditiis commodi, vitae ipsam sint sit! Deleniti ea, voluptates cumque natus saepe ratione itaque quas ad voluptatibus a totam laborum tenetur, consequatur dignissimos odit
           optio blanditiis ducimus neque veniam impedit doloribus quia! Excepturi dolorem et, impedit soluta rem minima modi perspiciatis cumque quo eius ad, labore aliquam praesentium autem culpa?
         </p>
+
+        <!--Some code sourced and edited accordingly from:
+        
+        dcode - How to Create an Image Grid Gallery - https://www.youtube.com/watch?v=rnhoY5Cdmy0
+        dcode - Image Hover Test Overlay Effect with HTML & CSS - https://www.youtube.com/watch?v=exb2ab72Xhs-->
+
         <div class="about-images">
           <div class="image-wrapper about-wrapper">
             <img src="./images/about1.jpg" alt="Three attendees smiling and posing" />

@@ -8,105 +8,6 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
     <title>Bookings - Second Hand</title>
     <link rel="icon" href="./images/circlelogo80.png" type="image/x-icon" />
-    <style>
-      .container h1 {
-        font-size: clamp(1.8rem, 2.5vw, 2.5rem);
-        margin-bottom: 1rem;
-      }
-
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        width: 100%;
-        padding: 2rem;
-      }
-
-      form {
-        text-align: start;
-        margin-top: 2rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 2rem;
-      }
-
-      label {
-        display: block;
-      }
-
-      input,
-      textarea,
-      select {
-        display: block;
-        width: 100%;
-        margin: 0.3rem 0 1rem 0;
-        padding: 0.5rem 1rem;
-        border-radius: 10px;
-        border: none;
-        font-size: 0.8rem;
-        font-family: Verdana, sans-serif;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 20%);
-      }
-
-      input,
-      select {
-        height: 2rem;
-      }
-
-      textarea {
-        resize: none;
-      }
-
-      .other-details {
-        grid-column: 1 / -1;
-      }
-
-      #submit,
-      #reset {
-        box-shadow: none;
-        min-height: 2.5rem;
-        border-radius: 20px;
-        font-family: Georgia, serif;
-        font-size: 1rem;
-        letter-spacing: 4px;
-        transition: transform 0.5s ease;
-        max-width: 100%;
-      }
-
-      #submit {
-        background-color: var(--accentOther);
-        color: white;
-        justify-content: flex-start;
-      }
-
-      #reset {
-        background-color: var(--accentMain);
-        justify-content: flex-end;
-      }
-
-      #submit:hover,
-      #reset:hover {
-        transform: scale(1.05);
-        cursor: pointer;
-      }
-
-      @media screen and (min-width: 851px) {
-        .form-buttons {
-          display: flex;
-          justify-content: space-around;
-          column-gap: 2rem;
-        }
-      }
-
-      @media screen and (min-width: 1050px) {
-        form {
-          grid-template-columns: 1fr 1fr;
-        }
-
-        .form-buttons {
-          grid-column: span 2;
-        }
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -131,7 +32,7 @@
       </label>
     </header>
 
-    <div class="container">
+    <div class="bookings-container">
       <h1>Bookings</h1>
       <p>Fields marked with * are required.</p>
       <form>
