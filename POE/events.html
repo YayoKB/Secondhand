@@ -1,0 +1,249 @@
+<!--Kate Blake-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <title>Events - Second Hand</title>
+    <link rel="icon" href="./images/circlelogo80.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/circlelogo80.png" alt="Thrift Fest Logo" />
+      <h1 class="logo-heading" style="color: var(--accentMain)">Second Hand Thrift Fest</h1>
+      <input type="checkbox" class="nav-toggle" name="nav-toggle" id="nav-toggle" />
+      <!--This is for the responsive menu-->
+
+      <nav>
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./events.html" class="is-active">Events</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./bookings.html">Bookings</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <!--This is for the responsive menu-->
+        <span></span>
+      </label>
+    </header>
+    <!--Some code sourced and edited accordingly from:
+
+    Julio Codes - Reponsive FAQ accordion dropdown - https://www.youtube.com/watch?v=MXrtXg1kpVs 
+    dcode - How to create a CSS-Only Accordion - https://www.youtube.com/watch?v=pzy_QStQaqA -->
+    <div class="events-container">
+      <h1>Events</h1>
+      <section class="events">
+        <div class="event-links">
+          <input type="radio" name="event-radio" id="novalis" class="event-input" checked />
+          <label for="novalis" class="event-label" checked>Novalis</label>
+
+          <div class="event-content" id="novalis-event">
+            <!--Possibly embed FB events later, or automate event-filling script-->
+            <h2><em>The Monthly Novalis Thrift Fest</em></h2>
+            <div class="event-image">
+              <img src="./images/novalis-event.jpg" alt="Thrift Fest at Novalis Ubuntu Institute" />
+            </div>
+
+            <h3 class="first-heading">When:</h3>
+            <!-- create getDateTime function, use with FB events later -->
+            <p>SATURDAY, 26 MARCH 2022 FROM 10:30 - 15:00</p>
+
+            <h3>Where:</h3>
+            <a href="https://goo.gl/maps/NvcHdfsMsxZyNkbw6" target="_blank" rel="noopener" rel="noreferrer">The Novalis Ubuntu Institute</a>
+
+            <h3>Details:</h3>
+            <ul>
+              <li>We are Officially taking in applications for the Monthly Novalis Thrift Fest 2022</li>
+              <li>Email thriftfest123@gmail.com if you are interested in participating as a vendor.</li>
+              <li>Please note: Stall spaces are limited.</li>
+              <li>Regular stall (2m x 1.3m) Inside - R230 (Just the space)</li>
+              <li>Gazebo stall (3m x 3m) Outside - R340 (Just the space)</li>
+              <li>Trestle hire (optional) R65</li>
+              <li>Anything handmade, second hand and new may be sold as long as it is legal.</li>
+              <li>
+                Anyone can join - you don't have to be a vintage dealer or have done a market before to trade. Perfect opportunity to turn good quality items into CASH as well as decluttering your
+                home.
+              </li>
+              <li>Entrance is R10 to the market, R5 for kids under 12 years.</li>
+              <li>Make sure to invite your friends and family, to carpool and to bring CASH as there is no ATM on the facility</li>
+              <li>All Covid-19 protocols will be followed.</li>
+            </ul>
+          </div>
+
+          <input type="radio" name="event-radio" id="obs" class="event-input" />
+          <label for="obs" class="event-label">Obs-fficial</label>
+          <div class="event-content" id="observatory-event">
+            <h2><em>The Monthly Obs-fficial Thrift Fest</em></h2>
+            <div class="event-image">
+              <img src="./images/obs-event.jpg" alt="The Monthly Obs-fficial Thrift Fest" />
+            </div>
+
+            <h3 class="first-heading">When:</h3>
+            <p>SATURDAY, 2 APRIL 2022 FROM 09:30-14:30</p>
+
+            <h3 class="first-heading">Where:</h3>
+            <a href="https://goo.gl/maps/nKwQ1aRCn5YcwJiN7" target="_blank" rel="noopener" rel="noreferrer">Observatory Community Centre</a>
+
+            <h3>Details:</h3>
+            <ul>
+              <li>We are OBS-FICIALLY taking in applications for the APRIL Observatory community Hall Thrift Fest.</li>
+              <li>If you are interested in participating as a vendor - Please email thriftfest123@gmail.com</li>
+              <li>We have 60 stalls available. Some inside, some outside.</li>
+              <li>Regular stall (2 m x 1.6m) Inside - R190</li>
+              <li>Gazebo stall (3m x3m space) Outside (Bring your own Gazebo) R280</li>
+              <li>Anything Second Hand, hand made or new may be sold as long as it is legal.</li>
+              <li>1 x sorted plastic BLACK BAG bag of recycling = 1 x Free entrance.</li>
+              <li>Entrance is R10 (R5 for kids under 12 years)</li>
+              <li>There is a play ground for the kids and lots of vendors to shop from. Great tunes to listen to, delicious food on sale and a general great vibe.</li>
+              <li>All Covid-19 protocols will be followed.</li>
+            </ul>
+          </div>
+
+          <input type="radio" name="event-radio" id="trenchtown" class="event-input" />
+          <label for="trenchtown" class="event-label">Trenchtown</label>
+          <div class="event-content" id="trenchtown-event">
+            <h2><em>The Monthly Trenchtown Thrift Fest</em></h2>
+            <div class="event-image">
+              <img src="./images/trench-event.jpg" alt="The Monthly Trenchtown Thrift Fest" />
+            </div>
+
+            <h3 class="first-heading">When:</h3>
+            <p>SUNDAY, 20 MARCH 2022 FROM 13:30-18:00</p>
+
+            <h3>Where:</h3>
+            <a href="https://g.page/TrenchtownObs?share" target="_blank" rel="noopener" rel="noreferrer">Trenchtown</a>
+
+            <h3>Details:</h3>
+            <ul>
+              <li>Please note we only have 15 stalls available - So second hand will be limited to allow more space for festival wear, accessories, art and Handmade products.</li>
+              <li>If you are interested in participating please email thriftfest123@gmail.com</li>
+              <li>REGULAR stall (1.9 m x 1.3m) R250</li>
+              <li>Gazebo stall (3m x 3m) R315</li>
+              <li>Trestle hire (optional)</li>
+              <li>Entrance is R5 for customers.</li>
+              <li>Think groovy tunes, art, cocktails, Thrift stalls, festival gear, golden pineapples and pink flamingos - join us on SUNDAY the 20th March.</li>
+              <li>DJ on the decks playing tropical beats</li>
+              <li>500ml Beer R25</li>
+              <li>Large Pizzas are only R80.</li>
+              <li>Double Jack Daniels R40.</li>
+              <li>Double Southern Comfort R30.</li>
+              <li>Double Vodka and Red Bull R50.</li>
+              <li>Please make sure to bring CASH, material shopping bags and friends</li>
+              <li>All Covid-19 protocols will be followed.</li>
+            </ul>
+          </div>
+
+          <input type="radio" name="event-radio" id="brass" class="event-input" />
+          <label for="brass" class="event-label">Brass Bell</label>
+          <div class="event-content" id="brass-event">
+            <h2><em>The Monthly Brass Bell Thrift Fest</em></h2>
+            <div class="event-image">
+              <img src="./images/brass-event.jpg" alt="The Monthly Brass Bell Thrift Fest" />
+            </div>
+
+            <h3 class="first-heading">When:</h3>
+            <p>WEDNESDAY, 30 MARCH 2022 FROM 16:00-21:00</p>
+
+            <h3>Where:</h3>
+            <a href="https://g.page/BrassBellKalkBay?share" target="_blank" rel="noopener" rel="noreferrer">The Brass Bell</a>
+
+            <h3>Details:</h3>
+            <ul>
+              <li>We are taking applications for vendors, first come first serve. Stalls are very LIMITED!</li>
+              <li>If you are interested in participating, please email thriftfest123@gmail.com</li>
+              <li>Stalls are R250 ( 2m x 1.5m)</li>
+              <li>We have Trestle hire available for R65.</li>
+              <li>Entrance is FREE for customers.</li>
+              <li>We are so excited to be introducing another adventure - The monthly Thrift fest at The Brass Bell!</li>
+              <li>Shop Thrift, hand made, art and craft - whilst enjoying food and drink specials The good old Bell has to offer.</li>
+              <li>Make sure to bring friends, family and material shopping bags</li>
+              <li>All Covid-19 protocols will be followed.</li>
+            </ul>
+          </div>
+
+          <input type="radio" name="event-radio" id="vegan" class="event-input" />
+          <label for="vegan" class="event-label">Vegan Goods</label>
+          <div class="event-content" id="vegan-event">
+            <h2><em>The Monthly Vegan Goods Thrift Market</em></h2>
+            <div class="event-image">
+              <img src="./images/vegan-event.jpg" alt="The Monthly Vegan Goods Thrift Market" />
+            </div>
+
+            <h3 class="first-heading">When:</h3>
+            <p>SUNDAY, 27 MARCH 2022 FROM 10:00-15:00</p>
+
+            <h3>Where:</h3>
+            <a href="https://goo.gl/maps/6uA9f1ojbqrqWtL99" target="_blank" rel="noopener" rel="noreferrer">The Range, Tokai</a>
+
+            <h3>Details:</h3>
+            <ul>
+              <li>The Vegan Goods Market and The Thrift Fest will be bringing you the ULTIMATE sustainable market experience on SUNDAY, 27th MARCH, 2022, at The Range, Tokai! Entry is FREE 💚</li>
+              <li>
+                Get your groceries, good food, drinks as well as home and body products from a wonderful variety of small businesses that are excited to share their cruelty-free products and services
+                with YOU. Then when you thought the sustainable experience was over, you pop over to the log cabin to shop from a curated selection of goods, thrift and hand made right next door to
+                our market!
+              </li>
+              <li>A WIDE variety of delicious vegan food & beverages (sweet AND savory).</li>
+              <li>Local, handcrafted & cruelty-free home & body products.</li>
+              <li>Lots of shade and seating.</li>
+              <li>Ample parking facilities.</li>
+              <li>Play stations and games for the kiddies - all supervised.</li>
+              <li>A bar with vegan-friendly wines and beers.</li>
+              <li>Beautiful views of the surrounding mountains and vineyards.</li>
+              <li>Animal adoption + fostering opportunities.</li>
+              <li>Last but not least, ALL THE GOOD VAAAAARBZZZ</li>
+              <li>All Covid-19 protocols will be followed.</li>
+            </ul>
+          </div>
+
+          <input type="radio" name="event-radio" id="bird" class="event-input" />
+          <label for="bird" class="event-label" style="border-radius: 10px 10px 0px 0px">Blue Bird</label>
+          <div class="event-content" id="blue-event">
+            <h2><em>The Monthly Blue Bird Thrift Market</em></h2>
+            <div class="event-image">
+              <img src="./images/blue-event.jpg" alt="The Monthly Blue Bird Thrift Market" />
+            </div>
+
+            <h3 class="first-heading">When:</h3>
+            <p>WEDNESDAY, 6 APRIL 2022 FROM 15:30-21:00</p>
+
+            <h3>Where:</h3>
+            <a href="https://goo.gl/maps/629Nf8st5H1YAPT57" target="_blank" rel="noopener" rel="noreferrer">Blue Bird Garage Food and Goods Market</a>
+
+            <h3>Details:</h3>
+            <ul>
+              <li>We are officially taking in applications for the Blue Bird Garage and Thrift Fest collaboration right here in Muizenberg! We are super excited for this and want you to join us.</li>
+              <li>If you are interested in participating, please email thriftfest123@gmail.com</li>
+              <li>Think second hand, hand made and new products - super affordable but good quality.</li>
+              <li>First come first serve. We are looking for 20 vendors to come trade.</li>
+              <li>PLEASE NOTE: NO FOOD STALLS.</li>
+              <li>Regular stall (2.5m x 2m) R290 - Includes a table.</li>
+              <li>All stalls are inside.</li>
+              <li>Entrance is FREE</li>
+              <li>Make sure to bring CASH, material shopping bags, friends, family and good vibrations.</li>
+              <li>All Covid-19 protocols will be followed.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; Designed by Kate Blake, All Rights Reserved</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/OfficialSecondHandGroup/" target="_blank" rel="noopener" rel="noreferrer"
+          ><img src="./images/fb250lightgreen.png" height="40px" alt="Facebook Page Link"
+        /></a>
+        <a href="https://www.instagram.com/thriftfest/" target="_blank" rel="noopener" rel="noreferrer"><img src="./images/instalightgreen.png" height="40px" alt="Instagram Page Link" /></a>
+      </div>
+      <div class="back-to-top"><a href="#top">Back to Top</a></div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!--Kate Blake-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <script defer src="./js/home.js"></script>
+    <title>Second Hand Thrift Fest</title>
+    <link rel="icon" href="./images/circlelogo80.png" type="image/x-icon" />
+    <style>
+      .google-form {
+        background-color: var(--accentMain);
+        padding: 2rem;
+      }
+
+      .google-form p {
+        margin: 1rem 0;
+      }
+
+      .newsletter-btn {
+        font-size: 1rem;
+        background-color: var(--accentOther);
+        letter-spacing: 2px;
+        width: auto;
+        border-radius: 30px;
+        }
+
+      .newsletter-btn a {
+        color: white;
+      }
+
+      .newsletter-btn:hover a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Some code sourced and edited accordingly from:
+    
+    Kevin Powell - Create a responsive navigation bar with no JS! - https://www.youtube.com/watch?v=8QKOaTYvYUA -->
+
+    <header style="position: absolute; background-color: transparent">
+      <img class="logo" src="./images/circlelogo80.png" alt="Thrift Fest Logo" />
+
+      <h1 class="logo-heading" style="color: var(--accentMain)">Second Hand Thrift Fest</h1>
+      <!--This is for the responsive menu-->
+      <input type="checkbox" class="nav-toggle" name="nav-toggle" id="nav-toggle" />
+
+      <nav>
+        <ul>
+          <li>
+            <a href="./home.html" class="is-active">Home</a>
+          </li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./bookings.html">Bookings</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--This is for the responsive menu-->
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+    <div class="container">
+      <!-- Some code sourced and edited accordingly from: 
+csPoint - Full Screen Background Image Slider using CSS and HTML only - https://www.youtube.com/watch?v=Kd9LBwfB7Hc
+Web Zone - Full Screen Hero Background Image using HTML and CSS - https://www.youtube.com/watch?v=URTDznfBisY
+White, Z - How to make cross-fading images with CSS - https://www.devtwins.com/blog/css-cross-fading-images -->
+
+      <div class="home-background">
+        <div class="home-underside">
+          <div class="pic" id="pic4"></div>
+          <div class="pic" id="pic3"></div>
+          <div class="pic" id="pic2"></div>
+          <div class="pic" id="pic1"></div>
+        </div>
+
+        <div class="home-background-area">
+          <div class="home-background-text">
+            <h1 id="front-H1">Second Hand Thrift Fest</h1>
+            <p id="front-P"><em>Welcome to the biggest second hand market to hit the Cape.</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!--Some code sourced and edited accordingly from: 
+        
+      dcode - Image Hover Text Overlay Effect with HTML & CSS - https://www.youtube.com/watch?v=exb2ab72Xhs -->
+
+      <!-- Clearfix sourced from:
+
+      W3 Schools - CSS Layout - clear and clearfix - https://www.w3schools.com/Css/css_float_clear.asp -->
+
+      <section class="about-home clearfix">
+        <div class="image-wrapper home-wrapper img-1">
+          <img src="./images/home-about1.jpg" alt="Four boots with different colours" />
+          <div class="image-caption">
+            <p>There's something for everyone!</p>
+          </div>
+        </div>
+
+        <div class="image-wrapper home-wrapper img-2">
+          <img src="./images/home-about2.jpg" alt="Two people browsing clothes" />
+          <div class="image-caption">
+            <p>Clothes, food, trinkets and more!</p>
+          </div>
+        </div>
+
+        <h2 class="about-heading">What is Second Hand Thrift Fest?</h2>
+        <p class="about-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+          Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus.<br /><br />
+          Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />Aenean
+          euismod bibendum laoreet.
+        </p>
+      </section>
+
+      <!-- Some code sourced and edited accordingly from:
+
+Conor Bailey - JavaScript: Create a Device Friendly Product Slider With Progress Bar - https://www.youtube.com/watch?v=LPBGK1gqXoU -->
+
+      <section class="home-associates">
+        <h2>&#8592; Who we've worked with &#8594;</h2>
+        <div class="home-associates-row">
+          <div class="slider">
+            <div class="slider-inner">
+              <div class="slider-item">
+                <img src="./images/obs-logo.jpg" alt="Observatory Community Centre" />
+              </div>
+              <div class="slider-item">
+                <img src="./images/trench-town.jpg" alt="Trenchtown" />
+              </div>
+              <div class="slider-item">
+                <img src="./images/blue-bird.jpg" alt="Blue Bird Garage and Market" />
+              </div>
+              <div class="slider-item">
+                <img src="./images/novalis-logo.jpg" alt="Novalis Ubuntu Institute" />
+              </div>
+              <div class="slider-item">
+                <img src="./images/vegan-goods.jpg" alt="Vegan Goods Market" />
+              </div>
+              <div class="slider-item">
+                <img src="./images/brass-bell.jpg" alt="Brass Bell Restaurant and Pub" />
+              </div>
+              <div class="slider-item">
+                <img src="./images/ashanti.jpg" alt="Ashanti Gardens Backpackers and Hostel" />
+              </div>
+              <div class="slider-item">
+                <img src="./images/kenilworth.jpg" alt="Kenilworth Racecourse" />
+              </div>
+              <div class="slider-item">
+                <img src="./images/spice-yard.jpg" alt="The Spice Yard" />
+              </div>
+            </div>
+          </div>
+          <div class="slider-progress-bar">
+            <div class="prog-bar-inner"></div>
+          </div>
+        </div>
+        <button class="go-to-events"><a href="./events.html">See Our Events</a></button>
+      </section>
+    </div>
+
+    <section class="google-form">
+      <h1>Newsletter</h1>
+      <p>Click the button below to receive our newsletter:</p>
+      <button class="newsletter-btn"><a href="https://forms.gle/UGaNJM2BZhHaWcQN7" target="_blank" rel="noopener" rel="noreferrer">Newsletter link &#8605;</a></button>
+    </section>
+
+    <footer>
+      <p>&copy; Designed by Kate Blake, All Rights Reserved</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/OfficialSecondHandGroup/" target="_blank" rel="noopener" rel="noreferrer"
+          ><img src="./images/fb250lightgreen.png" height="40px" alt="Facebook Page Link"
+        /></a>
+        <a href="https://www.instagram.com/thriftfest/" target="_blank" rel="noopener" rel="noreferrer"><img src="./images/instalightgreen.png" height="40px" alt="Instagram Page Link" /></a>
+      </div>
+      <div class="back-to-top"><a href="#top">Back to Top</a></div>
+    </footer>
+  </body>
+</html>
