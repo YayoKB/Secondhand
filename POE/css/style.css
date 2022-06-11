@@ -48,6 +48,7 @@ p {
 
 p {
   line-height: 1.5;
+  font-family: "Delius", sans-serif;
 }
 
 h1 {
@@ -908,7 +909,7 @@ select {
   border-radius: 10px;
   border: none;
   font-size: 1rem;
-  font-family: "Dalius", sans-serif;
+  font-family: "Delius", sans-serif;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 20%);
 }
 
@@ -930,7 +931,7 @@ textarea {
   box-shadow: none;
   min-height: 2.5rem;
   border-radius: 20px;
-  font-family: "Dalius", serif;
+  font-family: "Delius", serif;
   font-size: 1rem;
   letter-spacing: 4px;
   transition: transform 0.5s ease;
