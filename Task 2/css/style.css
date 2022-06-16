@@ -914,10 +914,10 @@ select {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 20%);
 }
 
-input,
+/* input,
 select {
-  height: 2rem;
-}
+  height: auto;
+} */
 
 textarea {
   resize: none;

@@ -553,6 +553,7 @@ dcode - Image Hover Text Overlay Effeect with HTML & CSS - https://www.youtube.c
 
 .about p {
   margin: 2rem 2rem;
+  font-size: 1.2rem;
 }
 
 .about h1 {
@@ -911,11 +912,6 @@ select {
   font-size: 1rem;
   font-family: "Delius", sans-serif;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 20%);
-}
-
-input,
-select {
-  height: 2rem;
 }
 
 textarea {
