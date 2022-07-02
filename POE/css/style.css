@@ -914,6 +914,10 @@ select {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 20%);
 }
 
+.error {
+  color: red;
+}
+
 textarea {
   resize: none;
 }
@@ -949,6 +953,16 @@ textarea {
 #reset:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+#submit-message {
+  color: var(--accentOther);
+  background-color: var(--accentMain);
+  border: 1px solid var(--accentOther);
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center;
+  display: none;
 }
 
 /*Contact*/
@@ -1222,6 +1236,10 @@ td {
 
   form {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #submit-message {
+    grid-column: span 2;
   }
 
   .form-buttons {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
     <title>Bookings - Second Hand</title>
     <link rel="icon" href="./images/circlelogo80.png" type="image/x-icon" />
+    <script defer src="./js/bookings.js"></script>
   </head>
   <body>
     <header>
@@ -35,7 +36,7 @@
     <div class="bookings-container">
       <h1>Bookings</h1>
       <p>Fields marked with * are required.</p>
-      <form>
+      <form id="booking-form" onsubmit="return validateInputs()">
         <div>
           <label for="FirstName">First Name:*</label>
           <input type="text" name="FirstName" id="FirstName" title="Your First Name" placeholder="Jane" required />
@@ -54,16 +55,19 @@
         <div>
           <label for="Email">Email Address:*</label>
           <input type="email" name="Email" id="Email" title="Your Email Address" placeholder="janedoe@example.com" required />
+          <div class="error"></div>
         </div>
 
         <div>
           <label for="Cellphone">Cellphone Number:*</label>
           <input type="tel" name="Cellphone" id="Cellphone" title="Your Cellphone Number" placeholder="012 345 6789" required />
+          <div class="error"></div>
         </div>
 
         <div>
           <label for="Alt">Alternative Number:</label>
           <input type="tel" name="Alt" id="Alt" title="An alternative Contact number" placeholder="987 654 3210" />
+          <div class="error"></div>
         </div>
 
         <div>
@@ -93,7 +97,11 @@
           <textarea name="Other" id="Other" cols="40" rows="5" title="Any other details you would like to send" placeholder="What items you are going to sell, etc."></textarea>
         </div>
 
-        <div class="form-buttons"><input type="submit" value="Submit" id="submit" /> <input type="reset" value="Reset" id="reset" /></div>
+        <div class="form-buttons">
+          <input type="submit" value="Submit" id="submit" onsubmit="submitSuccess()" />
+          <input type="reset" value="Reset" id="reset" />
+        </div>
+        <div id="submit-message">Details submitted successfully.</div>
       </form>
     </div>
 
