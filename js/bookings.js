@@ -1,6 +1,3 @@
-//Some code sourced and edited accordingly from:
-//JavaScript Academy - Form validation using Javascript on the client side for beginners - https://www.youtube.com/watch?v=CYlNJpltjMM
-
 const form = document.getElementById("booking-form");
 const message = document.getElementById("submit-message");
 const email = document.getElementById("Email");
@@ -26,9 +23,6 @@ const isValidEmail = (email) => {
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 };
-
-//Regular expression below sourced from:
-//iHateRegex - Regex for phone number - https://ihateregex.io/expr/phone/
 
 const isValidNumber = (number) => {
   const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;

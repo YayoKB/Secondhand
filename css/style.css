@@ -92,9 +92,6 @@ button:hover a {
 }
 
 /*Header*/
-/*Some code sourced and edited accordingly from:
-
-Kevin Powell - Create a responsive navigation bar with no JS! - https://www.youtube.com/watch?v=8QKOaTYvYUA */
 
 header {
   background-color: var(--navback);
@@ -206,10 +203,6 @@ nav a:hover {
 
 /* Footer */
 
-/*Some code sourced and edited accordingly from:
-
-Kevin Powell - Easy sticky footer - https://www.youtube.com/watch?v=yc2olxLgKLk */
-
 footer {
   background-color: var(--navback);
   width: 100%;
@@ -260,11 +253,6 @@ footer p {
 }
 
 /* Home image background */
-
-/* Some code sourced and edited accordingly from: 
-csPoint - Full Screen Background Image Slider using CSS and HTML only - https://www.youtube.com/watch?v=Kd9LBwfB7Hc
-Web Zone - Full Screen Hero Background Image using HTML and CSS - https://www.youtube.com/watch?v=URTDznfBisY
-White, Z - How to make cross-fading images with CSS - https://www.devtwins.com/blog/css-cross-fading-images */
 
 .home-background {
   position: relative;
@@ -461,10 +449,6 @@ White, Z - How to make cross-fading images with CSS - https://www.devtwins.com/b
   font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
 
-/*Some code sourced and edited accordingly from:
-
-Conor Bailey - JavaScript: Create a Device Friendly Product Slider With Progress Bar - https://www.youtube.com/watch?v=LPBGK1gqXoU */
-
 .home-associates-row {
   position: relative;
   width: 90%;
@@ -544,10 +528,6 @@ Conor Bailey - JavaScript: Create a Device Friendly Product Slider With Progress
 }
 
 /*About*/
-
-/*Some code sourced and edited accordingly from:
-
-dcode - Image Hover Text Overlay Effeect with HTML & CSS - https://www.youtube.com/watch?v=exb2ab72Xhs */
 
 .about {
   width: 90vw;
@@ -685,11 +665,6 @@ dcode - Image Hover Text Overlay Effeect with HTML & CSS - https://www.youtube.c
   margin-right: 2rem;
 }
 
-/* Some code sourced and edited accordingly from:
-
-    Julio Codes - Reponsive FAQ accordion dropdown - https://www.youtube.com/watch?v=MXrtXg1kpVs 
-    dcode - How to create a CSS-Only Accordion - https://www.youtube.com/watch?v=pzy_QStQaqA */
-
 .events-container {
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -753,11 +728,6 @@ dcode - Image Hover Text Overlay Effeect with HTML & CSS - https://www.youtube.c
 }
 
 /*Image Gallery*/
-
-/*Some code sourced and edited accordingly from:
-
-dcode - How to Create an Image Grid Gallery - https://www.youtube.com/watch?v=rnhoY5Cdmy0
-Coding in Public - Lightbox Image Gallery Part 1 & 2 - https://www.youtube.com/watch?v=K64-o0JgO-s & https://www.youtube.com/watch?v=_h6iT2UnyVs */
 
 .gallery-container h1 {
   margin-top: 2rem;
@@ -1052,10 +1022,6 @@ td {
     padding: 2rem 4vw;
     display: block;
   }
-
-  /* Clearfix sourced from:
-
-  W3 Schools - CSS Layout - clear and clearfix - https://www.w3schools.com/Css/css_float_clear.asp */
 
   .clearfix::after {
     content: "";

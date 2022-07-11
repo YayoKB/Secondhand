@@ -1,7 +1,3 @@
-/*Some code sourced and edited accordingly from:
-
-Coding in Public - Lightbox Image Gallery Part 1 & 2 - https://www.youtube.com/watch?v=K64-o0JgO-s & https://www.youtube.com/watch?v=_h6iT2UnyVs */
-
 //For Gallery Lightbox
 
 const lightboxEnabled = document.querySelectorAll(".lightbox-enabled");
