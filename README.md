@@ -10,4 +10,6 @@ Our objectives were to create a responsive, well-designed website that will crea
 
 Second Hand Thrift (Fest) is an organised event run by Laura Rainbird and held in various areas across Cape Town. I chose it because they only had a Facebook page acting as their main web presence, as well as the fact that I am personally friends with Laura and would enjoy doing this for her.
 
-The main theme I went for was earthy greens and browns - linked to sustainability, earth - due to the fact that thrifting is meant to be better for the environment than buying newly produced clothing and items.
+This was a joy to make and it was a passion project as much as it was schoolwork. I learned a LOT of things along the way.
+
+I'm not much of a designer, but I tried. The main theme I went for was earthy greens and browns - linked to sustainability, earth - due to the fact that thrifting is meant to be better for the environment than buying newly produced clothing and items.
