@@ -26,8 +26,8 @@ As this was part of our Introduction to Web Development course, we were expected
 4. Implemented a Lightbox and Draggable slider through Javascript
 
 ### End result
-- 99% for the module! I lost marks due to forgetting to add captions for my gallery images, though. 🤕
-- I was approached by the owner of [Second Hand Thrift](https://www.facebook.com/OfficialSecondHandGroup/) to push the website into production. I respectfully declined due to the site needing more work in my opinion.
+- 99% for the module! I lost marks in Part 1 due to forgetting to add captions for my gallery images, though. 🤕 I added them when submitting Part 2.
+- I was approached by the owner of [Second Hand Thrift](https://www.facebook.com/OfficialSecondHandGroup/) to push the website into production. I respectfully declined due to (in my opinion) the site needing more work towards becoming an official release.
 
 ### What I learned
 To put it simply, *everything.* I went from scratching the surface of front-end development by writing a static and very ugly looking webpage with just HTML in Grade 12 to a complete website using HTML, CSS and JavaScript. If I didn't know how to do something, I'd either ask the lecturer right then and there or I'd Google/YouTube it until it clicked. Sometimes things went wrong and I was left staring at my screen in frustration but I kept tinkering until it was working well. Even if something seemed like a challenge, I'd have a go at it.
