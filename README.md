@@ -1,4 +1,4 @@
-# [Second Hand Thrift Website (WEDE-POE)](https://yayokb.github.io/Secondhand/)
+# [Second Hand Thrift Website (WEDE-POE)](https://yayokb-secondhand.netlify.app/)
 ![Second Hand Thrift Fest](https://user-images.githubusercontent.com/38580104/192519859-94255e32-5f9f-45ba-aceb-95021287ca00.png)
 
 ## Technical details
